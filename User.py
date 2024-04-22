@@ -1,9 +1,4 @@
-client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="YOUR API KEY",
-    base_url="https://api.chatanywhere.tech/v1"
-    # base_url="https://api.chatanywhere.cn/v1"
-)
+from openai import OpenAI
 from transitions import Machine
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from Data import initUser, getUserPrompts
